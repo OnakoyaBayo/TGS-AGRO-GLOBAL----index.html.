@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -15,8 +15,8 @@
       line-height: 1.6;
     }
     a {
-      color: #2a7f62;
       text-decoration: none;
+      color: #2a7f62;
     }
     h1, h2 {
       color: #2a7f62;
@@ -29,31 +29,32 @@
       padding: 50px 20px;
     }
 
-    /* Hero Section with Background Image */
+    /* Hero Section */
     .hero {
       background-image: url('https://images.unsplash.com/photo-1598514982907-f1072cde86dc?auto=format&fit=crop&w=1080&q=80');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       color: #fff;
-      padding: 100px 20px;
+      padding: 120px 20px;
       text-align: center;
       position: relative;
     }
-    /* Overlay for readability */
     .hero::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(42, 127, 98, 0.6); /* green overlay */
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(42,127,98,0.6);
       z-index: 0;
     }
     .hero-content {
       position: relative;
       z-index: 1;
+    }
+    .hero-logo {
+      max-width: 150px;
+      margin-bottom: 20px;
     }
     .hero h1 {
       font-size: 36px;
@@ -79,8 +80,10 @@
 
     /* Sections */
     .about, .services, .contact {
-      background-color: #f9f9f9;
       text-align: center;
+    }
+    .about {
+      background-color: #f9f9f9;
     }
     .services ul {
       list-style: none;
@@ -103,6 +106,25 @@
       background-color: #23644f;
     }
 
+    /* Floating WhatsApp Button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe57;
+    }
+
     /* Footer */
     footer {
       text-align: center;
@@ -123,6 +145,9 @@
         padding: 10px 15px;
         font-size: 14px;
       }
+      .hero-logo {
+        max-width: 120px;
+      }
     }
   </style>
 </head>
@@ -131,6 +156,8 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
+      <!-- Logo placeholder -->
+      <img src="https://via.placeholder.com/150x150.png?text=LOGO" alt="TGS Logo" class="hero-logo">
       <h1>TGS AGRO GLOBAL LIMITED</h1>
       <p>Poultry and Agrotech Solutions</p>
       <div class="buttons">
@@ -175,6 +202,8 @@
     &copy; 2026 TGS AGRO GLOBAL LIMITED
   </footer>
 
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/2348057388145" target="_blank" class="whatsapp-button">💬</a>
+
 </body>
-</html>
-              
+</html> 
