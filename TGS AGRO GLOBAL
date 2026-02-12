@@ -3,19 +3,50 @@
 <head>
   <title>TGS Agro Global</title>
   <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #2a7f62;
+    }
+    h2 {
+      color: #2a7f62;
+    }
+    p, li {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align: center;">
+<body>
   <h1>TGS AGRO GLOBAL LIMITED</h1>
   <p>Poultry and Agrotech Solutions</p>
 
   <h2>About Us</h2>
   <p>
     TGS Agro Global handles hatchery, broiler production,
-    processing and frozen chicken sales nationwide.
+    processing, and frozen chicken sales nationwide.
   </p>
 
+  <h2>Our Services</h2>
+  <ul>
+    <li>Hatchery Services</li>
+    <li>Broiler Production</li>
+    <li>Frozen Chicken Supply</li>
+    <li>Agrotech Innovation</li>
+  </ul>
+
   <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-  <p>Phone: +234...</p>
+  <p>Email: <a href="mailto:tgsagroglobal007@gmail.com">tgsagroglobal007@gmail.com</a></p>
+  <p>Phone: <a href="tel:08057388145">08057388145</a></p>
 </body>
 </html>
