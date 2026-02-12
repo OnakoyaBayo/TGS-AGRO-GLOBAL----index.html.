@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -28,12 +29,32 @@
     section {
       padding: 50px 20px;
     }
-    /* Hero Section */
+
+    /* Hero Section with Background Image */
     .hero {
-      background-color: #2a7f62;
+      background-image: url('https://images.unsplash.com/photo-1576698488356-b3d667d6b3db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpY2tlbnN8fDB8fHx8MTY5NzYyNzAxOQ&ixlib=rb-4.0.3&q=80&w=1080');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       color: #fff;
-      padding: 80px 20px;
+      padding: 100px 20px;
       text-align: center;
+      position: relative;
+    }
+    /* Overlay for readability */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(42, 127, 98, 0.6); /* green overlay */
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
     }
     .hero h1 {
       font-size: 36px;
@@ -56,6 +77,7 @@
     .hero .buttons a:hover {
       background-color: #f0f0f0;
     }
+
     /* Sections */
     .about, .services, .contact {
       background-color: #f9f9f9;
@@ -81,6 +103,7 @@
     .contact a:hover {
       background-color: #23644f;
     }
+
     /* Footer */
     footer {
       text-align: center;
@@ -88,6 +111,7 @@
       background-color: #2a7f62;
       color: #fff;
     }
+
     /* Responsive */
     @media (max-width: 600px) {
       .hero h1 {
@@ -107,11 +131,13 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>TGS AGRO GLOBAL LIMITED</h1>
-    <p>Poultry and Agrotech Solutions</p>
-    <div class="buttons">
-      <a href="mailto:tgsagroglobal007@gmail.com">Email Us</a>
-      <a href="https://wa.me/2348057388145" target="_blank">WhatsApp</a>
+    <div class="hero-content">
+      <h1>TGS AGRO GLOBAL LIMITED</h1>
+      <p>Poultry and Agrotech Solutions</p>
+      <div class="buttons">
+        <a href="mailto:tgsagroglobal007@gmail.com">Email Us</a>
+        <a href="https://wa.me/2348057388145" target="_blank">WhatsApp</a>
+      </div>
     </div>
   </section>
 
@@ -151,4 +177,5 @@
   </footer>
 
 </body>
-  </html>
+</html>!-- Services -->
+  
