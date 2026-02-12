@@ -6,3 +6,25 @@
   margin: 20px 0;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+<section class="services">
+  <h2>Our Services</h2>
+
+  <div class="service-box">
+    <img src="images/hatchery.jpg" alt="Hatchery">
+    <h3>Hatchery Services</h3>
+    <p>Day-old chicks production and supply.</p>
+  </div>
+
+  <div class="service-box">
+    <img src="images/broiler.jpg" alt="Broiler Production">
+    <h3>Broiler Production</h3>
+    <p>Healthy broilers grown in controlled conditions.</p>
+  </div>
+
+  <div class="service-box">
+    <img src="images/processing.jpg" alt="Frozen Chicken">
+    <h3>Frozen Chicken Supply</h3>
+    <p>Processed and hygienically packaged poultry.</p>
+  </div>
+
+</section>
